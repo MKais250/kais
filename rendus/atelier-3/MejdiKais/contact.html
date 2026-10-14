@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — MonPortfolio</title>
+</head>
+<body>
+  <header>
+    <a href="index.html">MonPortfolio</a>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><strong aria-current="page">Contact</strong></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="titre-hero">
+      <figure>
+        <img src="images/avatar-contact.jpg" alt="Avatar de Léa" width="150" height="150">
+      </figure>
+      <h1 id="titre-hero">Contactez-moi</h1>
+      <p>Une question, une proposition de stage ou de projet ? Écrivez-moi via le formulaire ci-dessous.</p>
+    </section>
+
+    <section aria-labelledby="titre-formulaire">
+      <h2 id="titre-formulaire">Formulaire de contact</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Vos coordonnées</legend>
+          <p>
+            <label for="nom">Nom</label><br>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+          </p>
+          <p>
+            <label for="email">E-mail</label><br>
+            <input type="email" id="email" name="email" placeholder="vous@exemple.com" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Votre message</legend>
+          <p>
+            <label for="sujet">Sujet</label><br>
+            <select id="sujet" name="sujet" required>
+              <option value="">Choisir un sujet</option>
+              <optgroup label="Opportunités">
+                <option value="stage">Proposition de stage</option>
+                <option value="projet">Proposition de projet</option>
+              </optgroup>
+              <optgroup label="Autre">
+                <option value="question">Question</option>
+                <option value="autre">Autre demande</option>
+              </optgroup>
+            </select>
+          </p>
+          <p>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="5" cols="30" placeholder="Votre message..." required></textarea>
+          </p>
+          <p>
+            <input type="checkbox" id="consentement" name="consentement" required>
+            <label for="consentement">J'accepte d'être recontacté·e par e-mail.</label>
+          </p>
+        </fieldset>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+
+    <aside aria-labelledby="titre-coordonnees">
+      <h2 id="titre-coordonnees">Coordonnées</h2>
+      <address>
+        Email : <a href="mailto:contact@monportfolio.dev">contact@monportfolio.dev</a><br>
+        Localisation : Tunis, Tunisie
+      </address>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© 2026 MonPortfolio</p>
+    <nav aria-label="Liens externes">
+      <ul>
+        <li><a href="https://linkedin.com/in/lea-dev" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/lea-dev" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="mailto:contact@monportfolio.dev" target="_blank" rel="noopener noreferrer">Mail</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
